@@ -20,7 +20,7 @@ function createTemplate(data){
     var template=`
     <html>
     <head>
-        <title>$[title]</title>
+        <title>${title}</title>
         <link href="/ui/style.css" rel="stylesheet"/>
     </head>
     <body>
@@ -29,11 +29,11 @@ function createTemplate(data){
             <a href='/'>HOME</a>
         </div>    
         <div>
-            <h1>$[heading]</h1>
+            <h1>${heading}</h1>
         </div>
         <div>
             17 9 2017
-            $[content]
+            ${content}
         </div>
     </div>
     </body>
