@@ -17,8 +17,8 @@ function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
-    var template=`<!DOCtype html>
-<html>
+    var template=`
+    <html>
     <head>
         <title>$[title]</title>
         <link href="/ui/style.css" rel="stylesheet"/>
@@ -38,6 +38,7 @@ function createTemplate(data){
     </div>
     </body>
 </html>`;
+return template;
 }
 
 app.get('/', function (req, res) {
