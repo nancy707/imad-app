@@ -21,6 +21,7 @@ body {
 }
 
 .container{
+                padding-left:400px   ;
                 padding: 50px;
                 max-width: 2000px;
                 color: orange;
