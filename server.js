@@ -34,8 +34,8 @@ function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
-    var template=`
-    <html>
+    var template=
+    `<html>
     <head>
         <title>${title}</title>
         <link href="/ui/style.css" rel="stylesheet"/>
