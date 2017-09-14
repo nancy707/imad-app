@@ -61,10 +61,10 @@ return template;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-/*app.get('/:articleName',function(req, res) {
-    var atricleName = req.params.atricleName;
-  res.send(createTemplate(articles[articleName]));
-});*/
+app.get('/:articleName',function(req, res) {
+    var atricleName=req.params.atricleName;
+    res.send(createTemplate(articles[articleName]));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
