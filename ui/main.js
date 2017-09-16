@@ -3,7 +3,7 @@ var button=document.getElementById('counter');
 button.onclick=function(){
     var request=new XMLHttpRequest();
     request.onreadystatehange=function(){
-      if(request.readyState == XMLHttpRequest.DONE){
+      if(request.readyState === XMLHttpRequest.DONE){
           if(request.statue===200){
                 var counter=request.responseText;
                 var span=document.getElementById('count');
